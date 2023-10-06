@@ -28,8 +28,6 @@ module.exports = {
                 {$addFields: {  "month" : {$month: '$data_compra'}}},
                 {$match: {month: dataAtual.getMonth() + 1}}
             ]);
-            console.log(mesAtual);
-            console.log(dataAtual);
             return res.status(200).json({data: despesas, success: true});
         } catch (error){
             return res.status(500).json({data: null, success: false});
