@@ -1,7 +1,7 @@
 module.exports = {
     mongodbMemoryServerOptions: {
       instance: {
-        dbName: "apirestMuralis"
+        dbName: "####" //Add your own Database name
       },
       binary: {
         version: "6.0.10", // Version of MongoDB
